@@ -552,7 +552,7 @@ they were added.
     use Zenstruck\Foundry\Proxy;
 
     PostFactory::new()
-        ->beforeInstantiate(function(array $attributes, string $class, static $factory): array {
+        ->beforeInstantiate(function(array $attributes, string $class, $factory): array {
             // $attributes is what will be used to instantiate the object, manipulate as required
             // $class is the class of the object being instantiated
             // $factory is the factory instance which creates the object
